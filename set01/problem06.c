@@ -29,7 +29,7 @@ int input()
 
 void compare(int a, int b, int c, int *largest)
 {
-
+    *largest=-2147483647;
     if(a>*largest)
     *largest=a;
     if(b>*largest)

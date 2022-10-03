@@ -11,8 +11,8 @@ int main()
      n=input_array_size();
      int a[n];
      input_array(n,a);
-     sum=sum_n_array(n, &a);
-     output(n,&a,sum);
+     sum=sum_n_array(n, a);
+     output(n,a,sum);
      return 0;
 }
 
@@ -40,7 +40,7 @@ int sum_n_array(int n, int a[n])
      for(i=0;i<n;i++)
      {
      sum=sum + a[i];
-     printf("%d",a[i]);
+    
      }
      
      return sum;

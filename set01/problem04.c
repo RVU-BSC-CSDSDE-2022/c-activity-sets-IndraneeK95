@@ -1,17 +1,17 @@
 #include <stdio.h>
 int  input();
-int add(int a, int b, int *c);
+void add(int a, int b, int *sum);
 void output(int a, int b, int sum);
 
 
 int main()
 {
-    int a, b, c;
+    int a, b, sum;
     printf("please enter the inputs\n");
     a=input();
     b=input();
-    c=add(a,b, &c);
-    output(a, b, c);
+    add(a,b, &sum);
+    output(a, b, sum);
 }
 int input()
 {
@@ -22,11 +22,11 @@ int input()
 }
 
 
-int add(int a, int b, int *c)
+void add(int a, int b, int *c)
 {
     
-    *c= *a + *b;
-    return *c;
+    *c= a + b;
+    
 
 }
 

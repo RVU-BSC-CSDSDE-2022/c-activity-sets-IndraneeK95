@@ -8,11 +8,11 @@ void output(int n, int sum);
 int main()
 {
     int n, sum;
-    n=input();
+    n=input_n();
     sum=sum_n_nos(n);
     output(n,sum);
 }
-int input()
+int input_n()
 {
   int n;
   printf("Enter the value of n whose sum has to be found\n");

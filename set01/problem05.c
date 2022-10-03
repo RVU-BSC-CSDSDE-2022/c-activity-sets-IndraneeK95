@@ -29,7 +29,8 @@ int input()
 
 int compare(int a, int b, int c)
 {
-    int largest=0;
+    
+    int largest=-2147483647;
     if(a>largest)
     largest=a;
     if(b>largest)

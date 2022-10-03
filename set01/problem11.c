@@ -34,12 +34,12 @@ Complex input_complex()
 Complex add_complex(Complex a, Complex b)
 {
     Complex sum;
-    sum.real=a.real+b.real;
-    sum.imaginary=a.imaginary+b.imaginary;
+    sum.real=(a.real+b.real);
+    sum.imaginary=(a.imaginary+b.imaginary);
     return sum;
 }
 
 void output( Complex a, Complex b, Complex sum)
 {
-	printf("(%f + i %f) + (%f + i %f) is (%f + i%f)\n",a.real, a.imaginary, b.real, b.imaginary, sum.real, sum.imaginary); 
+	printf("The sum of (%d +  %di) + (%d +  %di) is (%d + %di)\n",(int)a.real, (int)a.imaginary, (int)b.real, (int)b.imaginary, (int)sum.real, (int)sum.imaginary); 
 }
