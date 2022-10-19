@@ -31,13 +31,20 @@ int compare(int a, int b, int c)
 {
     
     int largest=-2147483647;
-    if(a>largest)
-    largest=a;
-    if(b>largest)
-    largest=b;
-    if(c>largest)
-    largest=c;
-    return largest;
+    if((a>b)&&(a>c))
+    {
+      largest=a;
+    
+      }
+    else{
+    if((b>a)&&(b>c))
+    {
+      largest=b;
+      return largest;
+      }
+   else
+         largest=c;}
+   return largest;
 }
 
 void output(int a, int b , int c, int largest)
